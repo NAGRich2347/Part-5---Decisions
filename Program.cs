@@ -15,32 +15,33 @@ namespace Part_5___Decisions
                 Console.WriteLine("Please enter your age.");
                 userAge = Convert.ToInt32(Console.ReadLine());
 
-                if (userAge >= 2){
+                if (userAge <= 2){
             
                     Console.WriteLine("You are an infant.");
                     Console.ReadLine();
                 }
 
-
-                else (userAge >= 5)
-                {
+                else if (userAge <= 5){
+                
                     Console.WriteLine("You are a toddler.");
                     Console.ReadLine();
                 }
 
 
-                if(userAge >= 12){
+
+                if (userAge <= 12){
 
                     Console.WriteLine("You are a kid.");
                     Console.ReadLine();
                 }
 
-
-                else (userAge >= 17){
+                else if (userAge <= 17){
             
                     Console.WriteLine("You are a teen.");
                     Console.ReadLine();
                 };
+
+
 
                 if (userAge >= 18){ 
             
@@ -48,11 +49,14 @@ namespace Part_5___Decisions
                     Console.ReadLine();
                 }
 
-                else (userAge >= 40){ 
+                else if (userAge >= 40){ 
             
                     Console.WriteLine("You are middle-aged.");
                     Console.ReadLine();
                 };
+
+
+
 
                 if (userAge >= 60){ 
 
@@ -60,13 +64,14 @@ namespace Part_5___Decisions
                     Console.ReadLine();
                 }
 
-                else (userAge <= 99) {
+                else if (userAge >
+                = 99){
 
                     Console.WriteLine("You are ancient!");
                     Console.ReadLine();
                 };
 
-            
+            Console.ReadLine();
         }
     }
 }
